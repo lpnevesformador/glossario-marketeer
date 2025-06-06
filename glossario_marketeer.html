@@ -12,12 +12,7 @@
       --cor-branco: #ffffff;
       --cor-escuro: #2c3e50;
     }
-    :root {
-      --cor-verde: #2ecc71;
-      --cor-cinza: #bdc3c7;
-      --cor-azul: #3498db;
-      --cor-laranja: #e67e22;
-    }
+
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0; padding: 0;
@@ -25,21 +20,27 @@
       text-align: center;
       color: #2c3e50;
     }
+
     header {
       background: linear-gradient(to right, var(--cor-azul), var(--cor-verde));
-    }
-    footer {
-      background: linear-gradient(to right, var(--cor-verde), var(--cor-laranja));
       padding: 10px;
       position: relative;
       color: white;
     }
+
+    footer {
+      background: linear-gradient(to right, var(--cor-verde), var(--cor-laranja));
+      padding: 10px;
+      color: white;
+    }
+
     header img {
       position: absolute;
       left: 10px;
       top: 10px;
       height: 60px;
     }
+
     #adminBtn {
       position: absolute;
       right: 5px;
@@ -52,83 +53,100 @@
       border-radius: 3px;
       cursor: pointer;
     }
+
     #adminBtn:hover {
       background-color: #34495e;
     }
-      position: absolute;
-      right: 10px;
-      top: 10px;
-      padding: 2px 6px;
-      font-size: 10px;
-      background-color: #2c3e50;
-      color: white;
-      border: none;
-      border-radius: 3px;
-      cursor: pointer;
-    }
-    #adminBtn:hover {
-      background-color: #34495e;
-    }
+
     .container {
       margin: 100px auto;
       max-width: 500px;
     }
+
+    #frontoffice {
+      background: var(--cor-branco) url('./fundo_frontoffice.png') no-repeat center bottom / cover;
+      border-top: 6px solid var(--cor-azul);
+      border-radius: 8px;
+      background-blend-mode: lighten;
+    }
+
+    #backoffice {
+      background: #fef6f0;
+      border-top: 6px solid var(--cor-laranja);
+      border-radius: 8px;
+    }
+
+    #listagem {
+      background: #f4fbf6;
+      border-top: 6px solid var(--cor-verde);
+      border-radius: 8px;
+    }
+
     h1 {
       font-size: 26px;
       margin-bottom: 5px;
       color: white;
     }
+
     h2 {
       color: var(--cor-cinza);
       font-weight: normal;
       font-size: 18px;
     }
+
     input {
-      background-color: #ffffff;
-      box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-      border: 1px solid var(--cor-cinza);
-      border-radius: 4px;
       padding: 10px;
       font-size: 16px;
       margin-top: 10px;
       width: 100%;
+      background-color: #ffffff;
+      border: 1px solid var(--cor-cinza);
+      border-radius: 4px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.1);
     }
+
     button {
+      padding: 10px;
+      font-size: 16px;
+      margin-top: 10px;
+      width: auto;
       background-image: linear-gradient(to right, var(--cor-azul), var(--cor-laranja));
       font-weight: bold;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-      background-color: var(--cor-azul);
       color: white;
       border: none;
       border-radius: 4px;
       cursor: pointer;
       transition: background-color 0.3s ease;
-      padding: 10px;
-      font-size: 16px;
-      margin-top: 10px;
-      width: auto;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     }
+
+    button:hover {
+      background-color: var(--cor-laranja);
+    }
+
     #resultado, #mensagem {
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      background-color: #ffffff;
-      border-left: 4px solid var(--cor-laranja);
       margin-top: 20px;
       padding: 10px;
-      background: #fff;
-      border: 1px solid #ccc;
+      background-color: #ffffff;
+      border-left: 4px solid var(--cor-laranja);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
+
     .hidden {
       display: none;
     }
+
     table {
       margin: 30px auto;
       border-collapse: collapse;
       width: 90%;
     }
+
     th, td {
       border: 1px solid #aaa;
       padding: 8px;
     }
+
     footer img {
       width: 100%;
       max-width: 800px;
